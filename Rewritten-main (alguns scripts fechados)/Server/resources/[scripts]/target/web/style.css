@@ -1,0 +1,59 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: #ccc;
+}
+
+* {
+	overflow: hidden;
+	user-select: none;
+	box-sizing: border-box;
+}
+
+.Target {
+	width: 100vw;
+	height: 100vh;
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+
+.Wrapper {
+	position: absolute;
+	top: calc(50% - 14px);
+	left: calc(50% + 25px);
+}
+
+.Eye {
+	font-size: 2.75vh;
+}
+
+.Label {
+	float: left;
+	letter-spacing: 1px;
+}
+
+.Text {
+	font-size: 13px;
+	list-style: none;
+	user-select: none;
+	white-space: nowrap;
+	font-family: "Roboto";
+}
+
+.Text div {
+	display: table;
+	margin: 0 0 5px;
+	padding: 6px 10px;
+	border-radius: 5px;
+	background: rgba(15,15,15,0.5);
+	text-shadow: 1px 1px rgba(0,0,0,0.5);
+	border: 1px solid rgba(111,169,220,0.35);
+}
+
+.Text div:hover {
+	color: #fff;
+	background: rgba(15,15,15,0.75);
+	text-shadow: 1px 1px rgba(0,0,0,0.75);
+	border: 1px solid rgba(111,169,220,0.70);
+}
